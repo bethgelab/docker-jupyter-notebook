@@ -5,6 +5,15 @@ MAINTAINER Bethge Lab <opensource@bethgelab.org>
 # Copied from Jupyter/Notebook
 # the first part is already in docker-xserver
 # ---- COPY BEGIN ----
+#
+# ---- MODIFICATION BEGIN ----
+# Not essential, but wise to set the lang
+# Note: Users with other languages should set this in their derivative image
+ENV LANGUAGE en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LC_ALL en_US.UTF-8
+ENV PYTHONIOENCODING UTF-8
+# ---- MODIFICATION END ----
 
 # Install Tini
 RUN curl -L https://github.com/krallin/tini/releases/download/v0.6.0/tini > tini && \
