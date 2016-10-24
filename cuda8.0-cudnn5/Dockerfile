@@ -1,4 +1,4 @@
-FROM bethgelab/xserver-x:cuda7.5-cudnn5
+FROM bethgelab/xserver-x:cuda8.0-cudnn5
 
 MAINTAINER Bethge Lab <opensource@bethgelab.org>
 
